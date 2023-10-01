@@ -4,7 +4,9 @@ Please setup the project and run the migration
 
 Import the IEEE OUI CSV data using PHP artisan console command
 
-Please check `app\Console\Commands\ImportOuiCsv.php`
+Please check `app\Console\Commands\ImportOuiCsv.php` for functionality
+
+Artisan command to import CSV
 
 `php artisan import:oui-csv`
 
