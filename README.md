@@ -14,14 +14,20 @@ This command will import all the CSV data into the database
 
 Implement a JSON API to lookup the vendor's OUI by MAC address
 
-I have added some random MAC addresses with the second character '2', '6', 'A' or 'E' as mentioned. Please check in `public/oui1.csv file`
+You can find the code in `app\Http\Controllers\OuiController.php`
+
+There is a validation to validate the MAC address and the code can be found in `app\Http\Requests\MacAddressRequest.php` for 'GET' and `app\Http\Requests\MacAddressMultipleRequest.php` for 'POST'
+
+There are two models `Organization` and `Assignment`
 
 1. GET request for single MAC lookup:
-   ![2023-10-01_18h45_41](https://github.com/ssnatu/glide/assets/31346079/ad2cbf51-344c-4016-8797-f6ae99411aa6)
+   
+![2023-10-01_19h41_41](https://github.com/ssnatu/glide/assets/31346079/c21e9fad-f175-4600-a557-954ef843fcd0)
 
 Response:
 
-![2023-10-01_18h47_22](https://github.com/ssnatu/glide/assets/31346079/01af016a-8cdd-4350-b8ba-35441c3e8b12)
+![image](https://github.com/ssnatu/glide/assets/31346079/76e2143e-68e7-4c2b-88aa-f40214dc2a9a)
+
 
 2. POST request for multiple MAC lookup:
    
@@ -30,3 +36,5 @@ Response:
 Response:
 
 ![2023-10-01_18h51_16](https://github.com/ssnatu/glide/assets/31346079/ce9c597a-36e8-4dce-af68-6d6de3ab0868)
+
+I have added some random MAC addresses with the second character '2', '6', 'A' or 'E' as mentioned and you can see it in the above POST request. Please check in `public/oui1.csv file`
