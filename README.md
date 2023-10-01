@@ -14,7 +14,7 @@ This command will import all the CSV data into the database
 
 Implement a JSON API to lookup the vendor's OUI by MAC address
 
-I have added some random MAC addresses with the second character '2', '6', 'A' or 'E' as mentioned. Please check in public/oui1.csv file
+I have added some random MAC addresses with the second character '2', '6', 'A' or 'E' as mentioned. Please check in `public/oui1.csv file`
 
 1. GET request for single MAC lookup:
    ![2023-10-01_18h45_41](https://github.com/ssnatu/glide/assets/31346079/ad2cbf51-344c-4016-8797-f6ae99411aa6)
